@@ -32,7 +32,7 @@ jobs:
         run: |
           go build -o hotspot-ingestion
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: hotspot-ingestion
           path: hotspot-ingestion
