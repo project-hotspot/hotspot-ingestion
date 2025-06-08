@@ -1,9 +1,0 @@
-{
-    "protoc": {
-        "options": [
-            "--proto_path=/home/eliot/Documents/GitHub/hotspot-ingestion/proto",
-            "--go_out=plugins=grpc:./proto"
-        ],
-        "compileOnSave":true
-    },
-}
