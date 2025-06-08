@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "hotspot-ingestion/pkg/ingestion_proto";
+
+enum Region {
+    REGION_US_CA = 0;
+    REGION_US_NY = 1;
+}
+
+message LocationEvent {
+    // The timestamp of the event
+    // in seconds since the epoch
+    int64 timestamp = 1;
+    // The location of the event
+    float latitude = 2;
+    float longitude = 3;
+    // region of the event
+    Region region = 4;
+    // The user's phone number
+    string user = 5;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+import "event.proto";
+
+option go_package = "hotspot-ingestion/pkg/ingestion_proto";
+
+service Ingestion {
+    rpc IngestEvent (LocationEvent) returns (google.protobuf.Empty);
+}
